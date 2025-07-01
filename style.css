@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  header {
+    background-color: hsl(183, 100%, 56%);  /* Sky Blue (or use #87CEEB) */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+ 
+  
+  nav {
+    background-color: hsl(0, 0%, 27%);
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 30px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .profile-img {
+    width: 120px;        /* Image ki width fix */
+    height: 120px;       /* Height fix */
+    border-radius: 50%;  /* Circle shape */
+    object-fit: cover;   /* Zoom crop for perfect fit */
+    margin-bottom: 10px; /* Gap below image */
+  }
+  section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+  }
+  
+  section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
